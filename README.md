@@ -15,6 +15,12 @@ git checkout feature/login # ブランチに移動
 省略型
 git checkout -b feature/login
 
+- git push --set-upstream origin feature/login
+- git push -u origin feature-branch
+  ローカルブランチをリモートに送りつつ、追跡関係を設定するコマンド。両方同じ動作
+
+- upstream設定済みなら'git push'だけでok
+
 ## Mergeの役割
 
 別ブランチでの変更をまとめて、メインのラインに統合することが目的です。作業が完了したらmainに切り替えてからマージします
