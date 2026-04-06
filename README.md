@@ -56,7 +56,11 @@ git remote add something_else リモートリポジトリurl
 
 git push -u origin main
 
-- 'feature-branch'からこの内容を追加
+# プルコマンド(最新の共有コードを取得)
+
+- nova-branchから情報を追加
+
+git pull
 
 ## Git BranchとMergeの役割
 
