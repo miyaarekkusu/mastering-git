@@ -1,4 +1,58 @@
-## Hello, Git!
+## Gitバージョン確認
+
+git --version
+
+# Gitユーザー、メール名設定
+
+git config --global user.name 'alex.dev'
+git config --global user.email 'alexdev@gmail.com'
+
+# Git空きリポジトリ作成
+
+git init
+
+git config --global init.defaultBranch main
+
+- master から mainになる
+
+# Gitステータス参照
+
+git status
+
+# Git選択したファイルを追加
+
+git add ##
+
+# Git全ファイルを追加
+
+git add ./
+
+# Gitコミット(コードの今の状態を複写)
+
+git commit -m 'READMEファイルを追加'
+
+# Git現在状態変更
+
+ステータスからハッシュ値を参照
+git checkout 'ハッシュ値'
+
+# メインの状態に戻すためのコマンド
+
+git checkout -f main
+
+2種類のリポジトリが存在する。ローカルとリモートリポジトリ。git initをするときローカルが作成される。GitHubなどのバージョンの管理サービスのサーバーにプッシュし、リモートリポジトリから協力者などとコードの共有する。
+
+## masterブランチをmainという名前に変更
+
+git branch -M main
+
+# 自分のパソコン上のローカルリポジトリと、リモートリポジトリをリンク(GitHubでリポジトリを作成する必要がある)
+
+git remote add something_else リモートリポジトリurl
+
+# リンクしたら、プッシュするときに毎回urlを貼るではなく、originとして扱いできる
+
+git push -u origin main
 
 - 'feature-branch'からこの内容を追加
 
